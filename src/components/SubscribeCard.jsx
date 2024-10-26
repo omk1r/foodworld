@@ -1,6 +1,4 @@
 import React from 'react';
-import dish from '../assets/subscribe-card/Photo.png';
-import salad from '../assets/subscribe-card/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png';
 
 const SubscribeCard = () => {
   return (
@@ -24,10 +22,16 @@ const SubscribeCard = () => {
         </div>
       </div>
       <div className="absolute left-0 bottom-0">
-        <img src={salad} alt="" />
+        <img
+          src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/subscribe%20card/a2stxzjrakd5qzru0yfn"
+          alt=""
+        />
       </div>
       <div className="absolute right-0 bottom-0">
-        <img src={dish} alt="" />
+        <img
+          src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/subscribe%20card/e44m1tqcntmkpwvlolev"
+          alt=""
+        />
       </div>
     </div>
   );

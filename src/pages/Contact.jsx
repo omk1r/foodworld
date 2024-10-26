@@ -2,7 +2,6 @@ import React from 'react';
 import SubscribeCard from '../components/SubscribeCard';
 import SmallRecipeCard from '../components/SmallRecipeCard';
 import { combinedRecipes } from '../../data';
-import chefImage2 from '../assets/chef-image-2.png';
 
 const Contact = () => {
   return (
@@ -12,7 +11,11 @@ const Contact = () => {
         <h2 className="font-semibold text-6xl text-center">Contact us</h2>
 
         <article className="flex flex-row gap-4 my-10 w-full h-full">
-          <img src={chefImage2} alt="Chef Image" className="w-2/6" />
+          <img
+            src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/aosfs7cfygjvdrirnm2o"
+            alt="Chef Image"
+            className="w-2/6"
+          />
           <form action="" className="flex flex-col gap-4  w-full p-2">
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="flex flex-col w-full lg:w-1/2">

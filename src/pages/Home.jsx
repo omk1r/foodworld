@@ -1,13 +1,5 @@
 import React from 'react';
-import chickenBaked from '../assets/baked-chicken-wings.png';
-import image14 from '../assets/image 14.png';
-import timer from '../assets/Timer.png';
-import knife from '../assets/ForkKnife.png';
-import ellipse from '../assets/Ellipse 2.png';
-import playcircle from '../assets/PlayCircle.png';
-import badge from '../assets/Badge.png';
 import { categories, instaPost, moreRecipes, recipes } from '../../data';
-import chefImage from '../assets/chef-image.png';
 import instalogo from '../assets/icons/004-instagram-white.png';
 import RecipeCard from '../components/RecipeCard';
 import SubscribeCard from '../components/SubscribeCard';
@@ -30,7 +22,11 @@ const Home = () => {
         <div className="bg-[#E7FAFE] w-1/2 lg:px-10 lg:py-8 px-4 py-3 overflow-hidden">
           <div className="w-fit my-4">
             <span className="flex flex-row items-center lg:gap-4 gap-2 bg-white lg:px-4 lg:py-2 px-2 py-1 rounded-[30px]">
-              <img src={image14} alt="" loading="lazy" />
+              <img
+                src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/ipfc5ewfrhtlqwrcvr3k"
+                alt=""
+                loading="lazy"
+              />
               <p className="text-sm font-semibold">Hot Recipes</p>
             </span>
           </div>
@@ -48,13 +44,21 @@ const Home = () => {
           </div>
           <div className="flex flex-row lg:gap-4 gap-2">
             <span className="rounded-3xl bg-[#000] bg-opacity-5 flex flex-row gap-2 md:px-4 md:py-2 px-2 py-1 items-center">
-              <img src={timer} alt="timer" loading="lazy" />
+              <img
+                src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/wuxzxamhbwd6em998td1"
+                alt="timer"
+                loading="lazy"
+              />
               <p className="opacity-60 md:text-sm text-xs font-medium">
                 30 Minutes
               </p>
             </span>
             <span className="rounded-3xl bg-[#000] bg-opacity-5 flex flex-row items-center gap-2 px-4 py-2">
-              <img src={knife} alt="chicken" loading="lazy" />
+              <img
+                src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/zg5w1yssxvitwkxjq9dc"
+                alt="chicken"
+                loading="lazy"
+              />
               <p className="opacity-60 md:text-sm text-xs font-medium">
                 Chicken
               </p>
@@ -62,7 +66,11 @@ const Home = () => {
           </div>
           <div className="lg:mt-16 mt-2 lg:flex flex-row justify-between hidden">
             <div className="flex flex-row items-center gap-2">
-              <img src={ellipse} alt="john" loading="lazy" />
+              <img
+                src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/tf3sufygrlujcbo7cj1j"
+                alt="john"
+                loading="lazy"
+              />
               <div className="flex flex-col items-center justify-center">
                 <p className="font-bold md:text-base text-sm">John Smith</p>
                 <p className="opacity-60 text-sm font-medium">15 March 2022</p>
@@ -74,25 +82,28 @@ const Home = () => {
             >
               <p className="font-semibold text-sm">View recipes</p>
               <img
-                src={playcircle}
+                src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/gnyco4yvgzwldhks5jur"
                 alt=""
                 width={24}
                 height={24}
-                loading="lazy"
               />
             </button>
           </div>
         </div>
         <div className=" w-1/2">
           <img
-            src={chickenBaked}
+            src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/pdrmxzogpj9xm6c64oun"
             alt="Baked Chiken banner"
             className="w-full h-full"
             loading="lazy"
           />
         </div>
-        <div className="md:absolute hidden left-[46%] top-10">
-          <img src={badge} alt="badge" loading="lazy" />
+        <div className="md:absolute hidden md:flex left-[46%] top-10 border-red-600">
+          <img
+            src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/rjk0hdikrixzflfuktbk"
+            alt="badge"
+            loading="lazy"
+          />
         </div>
       </header>
 
@@ -156,7 +167,7 @@ const Home = () => {
           </div>
           <div className="min-w-[55%]">
             <img
-              src={chefImage}
+              src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/gxf2dnw0mhv0oi1rypyd"
               alt=""
               className="w-full h-full"
               loading="lazy"

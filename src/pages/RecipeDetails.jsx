@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { combinedRecipes } from '../../data';
 import { useNavigate, useParams } from 'react-router-dom';
-import ellipse from '../assets/Ellipse 2.png';
-import timer from '../assets/Timer.png';
-import knife from '../assets/ForkKnife.png';
 import printIcon from '../assets/icons/printer.png';
 import shareIcon from '../assets/icons/share.png';
-import directionImage from '../assets/directionImage.png';
 import SubscribeCard from '../components/SubscribeCard';
 import SmallRecipeCard from '../components/SmallRecipeCard';
 
@@ -40,7 +36,7 @@ const RecipeDetails = () => {
                 style={{ borderColor: 'rgba(0, 0, 0, 0.1)' }}
               >
                 <img
-                  src={ellipse}
+                  src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/tf3sufygrlujcbo7cj1j"
                   alt="john"
                   loading="lazy"
                   width={50}
@@ -57,7 +53,11 @@ const RecipeDetails = () => {
                 className="flex flex-row items-center gap-4 border-r px-5"
                 style={{ borderColor: 'rgba(0, 0, 0, 0.1)' }}
               >
-                <img src={timer} alt="timer" loading="lazy" />
+                <img
+                  src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/wuxzxamhbwd6em998td1"
+                  alt="timer"
+                  loading="lazy"
+                />
                 <div className="flex flex-col items-start justify-center gap-1">
                   <p className="font-medium md:text-xs tracking-widest text-xs">
                     PREP TIME
@@ -71,7 +71,11 @@ const RecipeDetails = () => {
                 className="flex flex-row items-center gap-4 border-r h-full px-5"
                 style={{ borderColor: 'rgba(0, 0, 0, 0.1)' }}
               >
-                <img src={timer} alt="timer" loading="lazy" />
+                <img
+                  src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/wuxzxamhbwd6em998td1"
+                  alt="timer"
+                  loading="lazy"
+                />
                 <div className="flex flex-col items-start justify-center gap-1">
                   <p className="font-medium md:text-xs text-xs tracking-widest">
                     COOK TIME
@@ -82,7 +86,11 @@ const RecipeDetails = () => {
                 </div>
               </div>
               <div className="flex flex-row items-center gap-4 px-5">
-                <img src={knife} alt="knife" loading="lazy" />
+                <img
+                  src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/zg5w1yssxvitwkxjq9dc"
+                  alt="knife"
+                  loading="lazy"
+                />
                 <div className="flex flex-col items-center justify-center gap-1">
                   <p className="opacity-60 text-sm font-medium tracking-tight">
                     Chicken
@@ -266,7 +274,11 @@ const RecipeDetails = () => {
                 non numquam eius modi tempora incidunt ut labore et dolore
                 magnam aliquam quaerat voluptatem.
               </p>
-              <img src={directionImage} alt="" className="my-4" />
+              <img
+                src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/hqnbedrhhub7iksbzprm"
+                alt=""
+                className="my-4"
+              />
               <p className="text-base leading-6 tracking-tight opacity-60 my-3">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
