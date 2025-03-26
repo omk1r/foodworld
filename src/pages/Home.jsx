@@ -98,7 +98,7 @@ const Home = () => {
             loading="lazy"
           />
         </div>
-        <div className="md:absolute hidden md:flex left-[46%] top-10 border-red-600">
+        <div className="absolute md:flex left-[50%] w-16 md:w-auto  translate-x-[-40%] top-10 border-red-600">
           <img
             src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/rjk0hdikrixzflfuktbk"
             alt="badge"
