@@ -21,18 +21,18 @@ const RecipeDetails = () => {
   }
 
   return (
-    <div className="my-auto mx-8">
+    <div className="mx-8 my-auto overflow-hidden">
       {/* main section */}
-      <article className="lg:my-20 my-10">
+      <article className="my-10 lg:my-20">
         {/* header section */}
-        <header className="flex flex-row justify-between items-center gap-10 overflow-hidden">
-          <div className="flex flex-col justify-start gap-8 ">
-            <h1 className="font-semibold lg:text-6xl text-2xl tracking-tighter lg:mr-10 ">
+        <header className="flex md:flex-row flex-col justify-between items-center gap-10 overflow-hidden">
+          <div className="flex flex-col justify-start gap-8 w-full">
+            <h1 className="lg:mr-10 w-full font-semibold text-2xl lg:text-6xl tracking-tighter">
               {currentRecipe.title}
             </h1>
-            <div className="flex flex-row items-center ">
+            <div className="flex md:flex-row flex-col md:items-center">
               <div
-                className="flex flex-row items-center gap-2 justify-center border-r pr-6"
+                className="flex flex-row justify-start items-center gap-2 pr-2 md:pr-6 border-r"
                 style={{ borderColor: 'rgba(0, 0, 0, 0.1)' }}
               >
                 <img
@@ -42,15 +42,15 @@ const RecipeDetails = () => {
                   width={50}
                   height={50}
                 />
-                <div className="flex flex-col items-start justify-center">
-                  <p className="font-bold md:text-base text-sm">John Smith</p>
-                  <p className="opacity-60 text-sm font-medium">
+                <div className="flex flex-col justify-center items-start">
+                  <p className="font-bold text-sm md:text-base">John Smith</p>
+                  <p className="opacity-60 font-medium text-sm">
                     15 March 2022
                   </p>
                 </div>
               </div>
               <div
-                className="flex flex-row items-center gap-4 border-r px-5"
+                className="flex flex-row items-center gap-4 px-5 border-r"
                 style={{ borderColor: 'rgba(0, 0, 0, 0.1)' }}
               >
                 <img
@@ -58,17 +58,17 @@ const RecipeDetails = () => {
                   alt="timer"
                   loading="lazy"
                 />
-                <div className="flex flex-col items-start justify-center gap-1">
-                  <p className="font-medium md:text-xs tracking-widest text-xs">
+                <div className="flex flex-col justify-center items-start gap-1">
+                  <p className="font-medium text-xs md:text-xs tracking-widest">
                     PREP TIME
                   </p>
-                  <p className="opacity-60 text-sm font-medium tracking-tight">
+                  <p className="opacity-60 font-medium text-sm tracking-tight">
                     15 Minutes
                   </p>
                 </div>
               </div>
               <div
-                className="flex flex-row items-center gap-4 border-r h-full px-5"
+                className="flex flex-row items-center gap-4 px-5 border-r h-full"
                 style={{ borderColor: 'rgba(0, 0, 0, 0.1)' }}
               >
                 <img
@@ -76,11 +76,11 @@ const RecipeDetails = () => {
                   alt="timer"
                   loading="lazy"
                 />
-                <div className="flex flex-col items-start justify-center gap-1">
-                  <p className="font-medium md:text-xs text-xs tracking-widest">
+                <div className="flex flex-col justify-center items-start gap-1">
+                  <p className="font-medium text-xs md:text-xs tracking-widest">
                     COOK TIME
                   </p>
-                  <p className="opacity-60 text-sm font-medium tracking-tight">
+                  <p className="opacity-60 font-medium text-sm tracking-tight">
                     15 Minutes
                   </p>
                 </div>
@@ -91,89 +91,89 @@ const RecipeDetails = () => {
                   alt="knife"
                   loading="lazy"
                 />
-                <div className="flex flex-col items-center justify-center gap-1">
-                  <p className="opacity-60 text-sm font-medium tracking-tight">
+                <div className="flex flex-col justify-center items-center gap-1">
+                  <p className="opacity-60 font-medium text-sm tracking-tight">
                     Chicken
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-row items-center ">
-            <span className="bg-[#E7FAFE] rounded-full p-5 mx-2 ">
+          <div className="flex flex-row items-center">
+            <span className="bg-[#E7FAFE] mx-2 p-5 rounded-full">
               <img src={printIcon} alt="print" />
             </span>
-            <span className="bg-[#E7FAFE] rounded-full p-5 mx-2">
+            <span className="bg-[#E7FAFE] mx-2 p-5 rounded-full">
               <img src={shareIcon} alt="share" />
             </span>
           </div>
         </header>
 
         {/* banner image and nutrional info */}
-        <div className="flex flew-row w-full my-10 gap-8">
-          <figure className="w-2/3">
+        <div className="flex md:flex-row flex-col gap-8 my-10 w-full">
+          <figure className="w-full md:w-2/3">
             <img
               src={currentRecipe.img}
               alt=""
-              className="w-full rounded-3xl"
+              className="rounded-3xl w-full"
             />
             <figcaption className="sr-only">{currentRecipe.title}</figcaption>
           </figure>
-          <section className="rounded-3xl bg-[#E7FAFE] flex flex-col px-6 py-7 w-1/3 justify-between">
+          <section className="flex flex-col justify-between bg-[#E7FAFE] px-3 md:px-6 py-4 md:py-7 rounded-3xl w-full md:w-1/3">
             <div className="flex flex-col">
               <h2 className="font-semibold text-2xl tracking-tighter">
                 Nutrition Information
               </h2>
               <ul className="my-5">
                 <li className="flex justify-between items-center">
-                  <span className="font-medium text-lg tracking-tighter opacity-60">
+                  <span className="opacity-60 font-medium text-lg tracking-tighter">
                     Calories
                   </span>
                   <span className="font-medium text-lg tracking-tighter">
                     219.9 kcal
                   </span>
                 </li>
-                <hr className="border-t border-gray-300 my-4" />
+                <hr className="my-4 border-gray-300 border-t" />
                 <li className="flex justify-between items-center">
-                  <span className="font-medium text-lg tracking-tighter opacity-60">
+                  <span className="opacity-60 font-medium text-lg tracking-tighter">
                     Total Fat
                   </span>
                   <span className="font-medium text-lg tracking-tighter">
                     10.7 g
                   </span>
                 </li>
-                <hr className="border-t border-gray-300 my-4" />
+                <hr className="my-4 border-gray-300 border-t" />
                 <li className="flex justify-between items-center">
-                  <span className="font-medium text-lg tracking-tighter opacity-60">
+                  <span className="opacity-60 font-medium text-lg tracking-tighter">
                     Protein
                   </span>
                   <span className="font-medium text-lg tracking-tighter">
                     7.9 g
                   </span>
                 </li>
-                <hr className="border-t border-gray-300 my-4" />
+                <hr className="my-4 border-gray-300 border-t" />
                 <li className="flex justify-between items-center">
-                  <span className="font-medium text-lg tracking-tighter opacity-60">
+                  <span className="opacity-60 font-medium text-lg tracking-tighter">
                     Carbohydrate
                   </span>
                   <span className="font-medium text-lg tracking-tighter">
                     22.3 g
                   </span>
                 </li>
-                <hr className="border-t border-gray-300 my-4" />
+                <hr className="my-4 border-gray-300 border-t" />
                 <li className="flex justify-between items-center">
-                  <span className="font-medium text-lg tracking-tighter opacity-60">
+                  <span className="opacity-60 font-medium text-lg tracking-tighter">
                     Cholestrol
                   </span>
                   <span className="font-medium text-lg tracking-tighter">
                     27.4 mg
                   </span>
                 </li>
-                <hr className="border-t border-gray-300 my-4" />
+                <hr className="my-4 border-gray-300 border-t" />
               </ul>
             </div>
             <div>
-              <p className="leading-7 opacity-60 text-center">
+              <p className="opacity-60 text-center leading-5 md:leading-7">
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.{' '}
               </p>
@@ -181,7 +181,7 @@ const RecipeDetails = () => {
           </section>
         </div>
 
-        <p className="opacity-60 text-sm lg:text-base my-8 leading-7">
+        <p className="opacity-60 my-8 text-sm lg:text-base leading-5 md:leading-7">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -193,52 +193,52 @@ const RecipeDetails = () => {
       </article>
 
       {/* ingradients section */}
-      <section className="lg:my-20 my-10 gap-8 flex flex-row">
-        <div className="w-2/3 flex flex-col">
+      <section className="flex flex-row gap-8 my-10 lg:my-20">
+        <div className="flex flex-col w-2/3">
           <h2 className="font-semibold text-4xl tracking-tighter">
             Ingredients
           </h2>
-          <ul className="my-5 list-inside list-disc">
-            <p className="text-2xl font-semibold tracking-tighter my-2">
+          <ul className="my-5 list-disc list-inside">
+            <p className="my-2 font-semibold text-2xl tracking-tighter">
               For main dish
             </p>
-            <li className="text-base leading-7 opacity-60 py-2">
+            <li className="opacity-60 py-2 text-base leading-7">
               Lorem ipsum dolor sit amet
             </li>
-            <hr className="border-t border-gray-300 my-4" />
-            <li className="text-base leading-7 opacity-60 py-2">
+            <hr className="my-4 border-gray-300 border-t" />
+            <li className="opacity-60 py-2 text-base leading-7">
               Lorem ipsum dolor sit amet
             </li>
-            <hr className="border-t border-gray-300 my-4" />
-            <li className="text-base leading-7 opacity-60 py-2">
+            <hr className="my-4 border-gray-300 border-t" />
+            <li className="opacity-60 py-2 text-base leading-7">
               Lorem ipsum dolor sit amet
             </li>
-            <hr className="border-t border-gray-300 my-4" />
-            <li className="text-base leading-7 opacity-60 py-2">
+            <hr className="my-4 border-gray-300 border-t" />
+            <li className="opacity-60 py-2 text-base leading-7">
               Lorem ipsum dolor sit amet
             </li>
-            <hr className="border-t border-gray-300 my-4" />
-            <li className="text-base leading-7 opacity-60 py-3">
+            <hr className="my-4 border-gray-300 border-t" />
+            <li className="opacity-60 py-3 text-base leading-7">
               Lorem ipsum dolor sit amet
             </li>
-            <hr className="border-t border-gray-300 my-4" />
+            <hr className="my-4 border-gray-300 border-t" />
           </ul>
-          <ul className=" list-inside list-disc">
-            <p className="text-2xl font-semibold tracking-tighter my-2">
+          <ul className="list-disc list-inside">
+            <p className="my-2 font-semibold text-2xl tracking-tighter">
               For the sause
             </p>
-            <li className="text-base leading-7 opacity-60 py-2">
+            <li className="opacity-60 py-2 text-base leading-7">
               Lorem ipsum dolor sit amet
             </li>
-            <hr className="border-t border-gray-300 my-4" />
-            <li className="text-base leading-7 opacity-60 py-2">
+            <hr className="my-4 border-gray-300 border-t" />
+            <li className="opacity-60 py-2 text-base leading-7">
               Lorem ipsum dolor sit amet
             </li>
-            <hr className="border-t border-gray-300 my-4" />
-            <li className="text-base leading-7 opacity-60 py-3">
+            <hr className="my-4 border-gray-300 border-t" />
+            <li className="opacity-60 py-3 text-base leading-7">
               Lorem ipsum dolor sit amet
             </li>
-            <hr className="border-t border-gray-300 my-4" />
+            <hr className="my-4 border-gray-300 border-t" />
           </ul>
         </div>
         <aside className="w-1/3">
@@ -256,17 +256,17 @@ const RecipeDetails = () => {
       </section>
 
       {/*directions section */}
-      <section className="lg:my-20 my-10">
-        <div className="w-2/3 flex flex-col">
+      <section className="my-10 lg:my-20">
+        <div className="flex flex-col w-2/3">
           <h2 className="font-semibold text-4xl tracking-tighter">
             Directions
           </h2>
           <ul className="my-5">
             <li className="px-4 py-3">
-              <h5 className="text-2xl font-semibold tracking-tighter my-3">
+              <h5 className="my-3 font-semibold text-2xl tracking-tighter">
                 1. Lorem ipsum dolor sit amet
               </h5>
-              <p className="text-base leading-6 tracking-tight opacity-60 my-3">
+              <p className="opacity-60 my-3 text-base leading-6 tracking-tight">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
                 voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
@@ -279,7 +279,7 @@ const RecipeDetails = () => {
                 alt=""
                 className="my-4"
               />
-              <p className="text-base leading-6 tracking-tight opacity-60 my-3">
+              <p className="opacity-60 my-3 text-base leading-6 tracking-tight">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
                 voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
@@ -288,12 +288,12 @@ const RecipeDetails = () => {
                 magnam aliquam quaerat voluptatem.
               </p>
             </li>
-            <hr className="border-t border-gray-300 my-4" />
+            <hr className="my-4 border-gray-300 border-t" />
             <li className="px-4 py-3">
-              <h5 className="text-2xl font-semibold tracking-tighter my-2">
+              <h5 className="my-2 font-semibold text-2xl tracking-tighter">
                 1. Lorem ipsum dolor sit amet
               </h5>
-              <p className="text-base leading-6 tracking-tight opacity-60 my-3">
+              <p className="opacity-60 my-3 text-base leading-6 tracking-tight">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
                 voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
@@ -302,12 +302,12 @@ const RecipeDetails = () => {
                 magnam aliquam quaerat voluptatem.
               </p>
             </li>
-            <hr className="border-t border-gray-300 my-4" />
+            <hr className="my-4 border-gray-300 border-t" />
             <li className="px-4 py-3">
-              <h5 className="text-2xl font-semibold tracking-tighter my-2">
+              <h5 className="my-2 font-semibold text-2xl tracking-tighter">
                 3. Lorem ipsum dolor sit amet
               </h5>
-              <p className="text-base leading-6 tracking-tight opacity-60 py-2">
+              <p className="opacity-60 py-2 text-base leading-6 tracking-tight">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
                 voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
@@ -316,7 +316,7 @@ const RecipeDetails = () => {
                 magnam aliquam quaerat voluptatem.
               </p>
             </li>
-            <hr className="border-t border-gray-300 my-4" />
+            <hr className="my-4 border-gray-300 border-t" />
           </ul>
         </div>
       </section>
@@ -325,11 +325,11 @@ const RecipeDetails = () => {
       <SubscribeCard />
 
       {/* recipe recommendation */}
-      <section className="lg:my-20 my-10">
-        <h2 className="font-semibold text-4xl tracking-tighter text-center">
+      <section className="my-10 lg:my-20">
+        <h2 className="font-semibold text-4xl text-center tracking-tighter">
           You may like these recipe too
         </h2>
-        <div className="flex flex-wrap my-10 justify-center">
+        <div className="flex flex-wrap justify-center my-10">
           {combinedRecipes.slice(-4).map((recipe) => (
             <SmallRecipeCard recipe={recipe} key={recipe.id} />
           ))}
@@ -356,10 +356,10 @@ const OtherRecipeCard = ({ recipe }) => {
         />
       </div>
       <div className="flex flex-col justify-between items-start">
-        <p className="font-semibold text-xl leading-7 tracking-tighter line-clamp-2">
+        <p className="font-semibold text-xl line-clamp-2 leading-7 tracking-tighter">
           {recipe.title}
         </p>
-        <p className="font-medium text-sm tracking-tight opacity-70">
+        <p className="opacity-70 font-medium text-sm tracking-tight">
           {recipe.type}
         </p>
       </div>
