@@ -193,8 +193,8 @@ const RecipeDetails = () => {
       </article>
 
       {/* ingradients section */}
-      <section className="flex flex-row gap-8 my-10 lg:my-20">
-        <div className="flex flex-col w-2/3">
+      <section className="flex md:flex-row flex-col gap-8 my-10 lg:my-20">
+        <div className="flex flex-col md:w-2/3">
           <h2 className="font-semibold text-4xl tracking-tighter">
             Ingredients
           </h2>
@@ -241,7 +241,7 @@ const RecipeDetails = () => {
             <hr className="my-4 border-gray-300 border-t" />
           </ul>
         </div>
-        <aside className="w-1/3">
+        <aside className="md:w-1/3">
           <span className="font-semibold text-4xl tracking-tighter">
             Other Recipe
           </span>
@@ -257,7 +257,7 @@ const RecipeDetails = () => {
 
       {/*directions section */}
       <section className="my-10 lg:my-20">
-        <div className="flex flex-col w-2/3">
+        <div className="flex flex-col md:w-2/3">
           <h2 className="font-semibold text-4xl tracking-tighter">
             Directions
           </h2>
