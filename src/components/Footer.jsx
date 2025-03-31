@@ -6,18 +6,22 @@ import instagramImg from '../assets/icons/004-instagram.png';
 
 const Footer = () => {
   return (
-    <div className="lg:mt-20 mt-10 mx-8">
-      <div className="flex flex-row justify-between items-center my-8">
-        <div className="flex flex-col items-start">
-          <span className="text-2xl font-lobster flex flex-row">
+    <div className="mx-8 mt-10 lg:mt-20">
+      {/* Top Section */}
+      <div className="flex lg:flex-row flex-col justify-between items-center lg:items-start gap-8 my-8">
+        {/* Logo and Description */}
+        <div className="flex flex-col items-center lg:items-start lg:text-left text-center">
+          <span className="flex flex-row font-lobster text-2xl">
             FoodWorld <span className="text-[#FF7426]">.</span>
           </span>
-          <p className="opacity-60 md:leading-7 line-clamp-2 md:text-base text-xs">
-            Lorem ipsum dolor sit amet, consectetuipisicing elit,{' '}
+          <p className="opacity-60 mt-2 text-xs md:text-base line-clamp-2 md:leading-7">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit.
           </p>
         </div>
+
+        {/* Navigation Links */}
         <div>
-          <ul className="flex gap-8 text-base tracking-tight font-medium">
+          <ul className="flex lg:flex-row flex-col items-center gap-4 lg:gap-8 font-medium text-base tracking-tight">
             <li>
               <Link to={'/recipes'}>Recipes</Link>
             </li>
@@ -30,20 +34,26 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <hr className="border-t border-gray-300 my-4" />
-      <div className="my-8 relative flex  items-center">
-        <div className=" absolute left-1/2  transform -translate-x-1/2 opacity-60">
+
+      <hr className="my-4 border-gray-300 border-t" />
+
+      {/* Bottom Section */}
+      <div className="flex lg:flex-row flex-col justify-between items-center gap-4 my-8">
+        {/* Copyright */}
+        <div className="opacity-60 lg:text-left text-center">
           © 2024 Omkar Jadhav. Powered by VS Code
         </div>
-        <div className="ml-auto flex gap-6 items-center">
+
+        {/* Social Icons */}
+        <div className="flex justify-center items-center gap-6">
           <a href="#">
-            <img src={facebookImg} alt="" />
+            <img src={facebookImg} alt="Facebook" />
           </a>
           <a href="#">
-            <img src={twitterImg} alt="" />
+            <img src={twitterImg} alt="Twitter" />
           </a>
           <a href="#">
-            <img src={instagramImg} alt="" />
+            <img src={instagramImg} alt="Instagram" />
           </a>
         </div>
       </div>
