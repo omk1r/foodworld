@@ -151,7 +151,7 @@ const Home = () => {
 
       {/* learn more */}
       <section className="my-10 lg:my-20">
-        <div className="flex flex-row">
+        <div className="flex md:flex-row flex-col">
           <div className="my-20 lg:my-40 px-7 min-w-[45%]">
             <h3 className="font-semibold text-2xl lg:text-5xl tracking-tight">
               Everyone can be a chef in their own kitchen
@@ -161,7 +161,7 @@ const Home = () => {
               cupiditate expedita aperiam natus blanditiis reprehenderit itaque
               ex perferendis{' '}
             </p>
-            <button className="bg-black mt-16 px-10 py-4 rounded-xl w-fit font-semibold text-white text-sm tracking-tight">
+            <button className="bg-black mt-4 lg:mt-16 px-10 py-4 rounded-xl w-fit font-semibold text-white text-sm tracking-tight">
               Learn more
             </button>
           </div>

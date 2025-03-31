@@ -5,90 +5,90 @@ import { combinedRecipes } from '../../data';
 
 const Contact = () => {
   return (
-    <div className="my-auto mx-8">
+    <div className="mx-8 my-auto">
       {/* contact form */}
-      <section className="lg:my-20 my-10">
+      <section className="my-10 lg:my-20">
         <h2 className="font-semibold text-6xl text-center">Contact us</h2>
 
         <article className="flex flex-row gap-4 my-10 w-full h-full">
           <img
             src="https://res.cloudinary.com/dd85jrb4b/image/upload/f_auto,q_auto/v1/assets/aosfs7cfygjvdrirnm2o"
             alt="Chef Image"
-            className="w-2/6"
+            className="hidden lg:block w-2/6"
           />
-          <form action="" className="flex flex-col gap-4  w-full p-2">
-            <div className="flex flex-col lg:flex-row gap-8">
+          <form action="" className="flex flex-col gap-4 p-2 w-full">
+            <div className="flex lg:flex-row flex-col gap-8">
               <div className="flex flex-col w-full lg:w-1/2">
                 <label
                   htmlFor="name"
-                  className="text-xs font-medium tracking-widest leading-5 opacity-60 my-2"
+                  className="opacity-60 my-2 font-medium text-xs leading-5 tracking-widest"
                 >
                   NAME
                 </label>
                 <input
                   type="text"
                   placeholder="Enter your name..."
-                  className="border rounded-2xl ps-4 py-4 tracking-tight text-sm leading-5 font-normal focus:outline-none focus:border-2"
+                  className="py-4 ps-4 border focus:border-2 rounded-2xl focus:outline-none font-normal text-sm leading-5 tracking-tight"
                 />
               </div>
               <div className="flex flex-col w-full lg:w-1/2">
                 <label
                   htmlFor="email"
-                  className="text-xs font-medium tracking-widest leading-5 opacity-60 my-2"
+                  className="opacity-60 my-2 font-medium text-xs leading-5 tracking-widest"
                 >
                   EMAIL ADDRESS
                 </label>
                 <input
                   type="text"
                   placeholder="Your email address..."
-                  className="border rounded-2xl ps-4 py-4 tracking-tight text-sm leading-5 font-normal focus:outline-none focus:border-2"
+                  className="py-4 ps-4 border focus:border-2 rounded-2xl focus:outline-none font-normal text-sm leading-5 tracking-tight"
                 />
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row gap-8">
+            <div className="flex lg:flex-row flex-col gap-8">
               <div className="flex flex-col lg:w-1/2">
                 <label
                   htmlFor="subject"
-                  className="text-xs font-medium tracking-widest leading-5 opacity-60 my-2"
+                  className="opacity-60 my-2 font-medium text-xs leading-5 tracking-widest"
                 >
                   SUBJECT
                 </label>
                 <input
                   type="text"
                   placeholder="Enter subject"
-                  className="border rounded-2xl ps-4 py-4 tracking-tight text-sm leading-5 font-normal focus:outline-none focus:border-2"
+                  className="py-4 ps-4 border focus:border-2 rounded-2xl focus:outline-none font-normal text-sm leading-5 tracking-tight"
                 />
               </div>
               <div className="flex flex-col lg:w-1/2">
                 <label
                   htmlFor="subject"
-                  className="text-xs font-medium tracking-widest leading-5 opacity-60 my-2"
+                  className="opacity-60 my-2 font-medium text-xs leading-5 tracking-widest"
                 >
                   ENQUIRY TYPE
                 </label>
                 <input
                   type="text"
                   placeholder="Advertising..."
-                  className="border rounded-2xl ps-4 py-4 tracking-tight text-sm leading-5 font-normal focus:outline-none focus:border-2"
+                  className="py-4 ps-4 border focus:border-2 rounded-2xl focus:outline-none font-normal text-sm leading-5 tracking-tight"
                 />
               </div>
             </div>
             <div className="flex flex-col w-full">
               <label
                 htmlFor="subject"
-                className="text-xs font-medium tracking-widest leading-5 opacity-60 my-2"
+                className="opacity-60 my-2 font-medium text-xs leading-5 tracking-widest"
               >
                 MESSAGES
               </label>
               <textarea
                 type="text"
                 placeholder="Enter your messages"
-                className="border rounded-2xl ps-4 py-4 tracking-tight text-sm leading-5 font-normal resize-none h-60 focus:outline-none focus:border-2"
+                className="py-4 ps-4 border focus:border-2 rounded-2xl focus:outline-none h-32 lg:h-60 font-normal text-sm leading-5 tracking-tight resize-none"
               />
             </div>
           </form>
         </article>
-        <button className="flex place-self-center bg-black text-white rounded-xl font-semibold text-sm tracking-tight py-3 px-6 w-fit text-center">
+        <button className="flex place-self-center bg-black px-6 py-3 rounded-xl w-fit font-semibold text-white text-sm text-center tracking-tight">
           Submit
         </button>
       </section>
@@ -97,11 +97,11 @@ const Contact = () => {
       <SubscribeCard />
 
       {/* recipe recommendation */}
-      <section className="lg:my-20 my-10">
-        <h2 className="font-semibold text-4xl tracking-tighter text-center">
+      <section className="my-10 lg:my-20">
+        <h2 className="font-semibold text-4xl text-center tracking-tighter">
           Check out this delicious recipes
         </h2>
-        <div className="flex flex-wrap my-10 justify-center">
+        <div className="flex flex-wrap justify-center my-10">
           {combinedRecipes.slice(-4).map((recipe) => (
             <SmallRecipeCard recipe={recipe} key={recipe.id} />
           ))}
